@@ -161,6 +161,9 @@ while escape != 1:
                     else:
                         print(f"You grab your non-existent {key_choice} key and leave. You still have {inventory_length} keys.")
                     answer = input(f"You grab the key, where would you like to go next? ")
+                else:
+                    break
+    
             else:
                 tries_box += 1
     if answer == "box" and box == 1:
